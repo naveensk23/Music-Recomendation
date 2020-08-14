@@ -81,14 +81,14 @@ def play():
             'error': 'Track is required.'
         }), 400
 
-    get_video_id = make_request('https://developer.spotify.com/dashboard/applications/282fd062cc7a46ec8a695ff5890c89fa', {
+    get_video_id = make_request('https://developer.spotify.com/dashboard/applications/API key', {
         'q': request.args.get('track'),
         'part': 'id,snippet',
         'maxResults': 1,
         'type': 'video',
         #'key': os.getenv('YOUTUBE_API_KEY')
-        'key': '282fd062cc7a46ec8a695ff5890c89fa'
-        'Secret':    'f67021717cae4ef28654fa2d6e10cff1'
+        'key': 'API Key'
+        'Secret':    '@##@#############'
     })
     print(get_video_id)
 
